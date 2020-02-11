@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LivePractice.mainTabbedPage.xaml", "mainTabbedPage.xaml", typeof(global::LivePractice.mainTabbedPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LivePractice.MainTabbedPage.xaml", "MainTabbedPage.xaml", typeof(global::LivePractice.MainTabbedPage))]
 
 namespace LivePractice {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("mainTabbedPage.xaml")]
-    public partial class mainTabbedPage : global::Xamarin.Forms.TabbedPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("MainTabbedPage.xaml")]
+    public partial class MainTabbedPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(mainTabbedPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainTabbedPage));
         }
     }
 }

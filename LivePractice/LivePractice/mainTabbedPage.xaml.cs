@@ -13,18 +13,16 @@ using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 namespace LivePractice
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class mainTabbedPage : Xamarin.Forms.TabbedPage
+    public partial class MainTabbedPage : Xamarin.Forms.TabbedPage
     {
-        public mainTabbedPage()
+        public MainTabbedPage()
         {
             InitializeComponent();
 
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
             On<Android>().SetBarSelectedItemColor(Color.Yellow);
-            
+
 
         }
-
-        
     }
 }

@@ -4,10 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:LivePractice;assembly=LivePractice"
-             x:Class="LivePractice.mainTabbedPage">
+             mc:Ignorable="d"
+             x:Class="LivePractice.MainTabbedPage">
 
-
- 
     <local:HomePage Title="Home" IconImageSource="home"/>
     <local:DiscoveryPage Title="Discovery" IconImageSource="location"/>
     <local:BookmarkPage Title="Bookmarks" IconImageSource="bookmark"/>

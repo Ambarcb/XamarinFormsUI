@@ -36,7 +36,7 @@ namespace LivePractice
             }
             else
             {
-                await Navigation.PushModalAsync(new mainTabbedPage());
+                await Navigation.PushModalAsync(new MainTabbedPage());
             }
 
             
