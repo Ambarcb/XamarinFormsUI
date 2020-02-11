@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White"
+             x:Class="LivePractice.SignUpPage">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*" />
+                <ColumnDefinition Width="5*" />
+
+            </Grid.ColumnDefinitions>
+            <Label Text="Sign Up" 
+                           FontSize="45" TextColor="Black" FontAttributes="Bold" Margin="10" 
+                           Grid.Column="0" 
+                           Grid.Row="0"
+                           VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" />
+            <Label Text="Login" 
+                           Grid.Row="0"
+                           FontSize="25" FontAttributes="Bold" 
+                           Style="{StaticResource TextColor}"
+                           Grid.Column="1"  HorizontalOptions="EndAndExpand" Margin="0,40,10,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+
+            <Image Grid.Row ="1" 
+                             Grid.Column="0"
+                             Source="camera" 
+                             Grid.ColumnSpan="2"
+                             HorizontalOptions="CenterAndExpand"
+                             WidthRequest="100" HeightRequest="100" Margin="10,10,0,0"/>
+
+            <Entry Grid.Row="2"
+                   
+                Placeholder="Email address"
+                   x:Name="emailLabel"
+                    Grid.ColumnSpan="2"
+                   Margin="30"
+                   Grid.Column="0"/>
+
+            <Entry Grid.Row="3"
+                   Placeholder="Username"
+                   x:Name="usernameLabel"
+                    Grid.ColumnSpan="2"
+                   Grid.Column="0"
+                   Margin="30,0,30,0"/>
+
+            <Entry Grid.Row="4"
+                   Placeholder="Password"
+                   x:Name="passwordLabel"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="FillAndExpand" 
+                   Margin="30"
+                   IsPassword="True"/>
+
+            <Image Grid.Row="4" Grid.Column="1" Source="ShowPassword" HorizontalOptions="EndAndExpand"  Margin="30"/>
+
+            <Entry Grid.Row="5" 
+                   Placeholder="Repeat password"
+                   x:Name="rPasswordLabel"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="FillAndExpand" 
+                   Margin="30,0,30,50"
+                   IsPassword="True"/>
+
+            <Image Grid.Row="5" Grid.Column="1" Source="ShowPassword" HorizontalOptions="End" Margin="0,0,30,50"  >
+
+            </Image>
+
+
+            <Button Command="{Binding MyCommand}" Grid.Row="6"  Grid.Column="0"   FontSize="15" Grid.ColumnSpan="2" ContentLayout="Left,10" Text="SIGN UP" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="80,0,80,0" 
+                    FontAttributes="Bold"  Image="checkMark" BorderColor="Gainsboro"  Style="{StaticResource ButtonColor}" CornerRadius="20" Clicked="Button_Clicked"/>
+
+            <Label Text="Terms of Service"  Grid.Row="7" Grid.Column="0"  Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" FontSize="16" Margin="30,10,30,0"/>
+
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
